@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.ticktech.sqlitepractice.MainActivity">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+   <EditText
+       android:id="@+id/productName"
+       android:layout_margin="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Please Enter Product Name"/>
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter Product Price"/>
+    <EditText
+        android:id="@+id/productExpiry"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter Product Expiry"/>
+    <Button
+android:onClick="submitProduct"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter To Delete Product"/>
+
+    <EditText
+        android:id="@+id/productIdToDelete"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter Product Id To Delete"/>
+
+    <Button
+        android:onClick="deleteProduct"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Product"/>
+
+
+
+  <EditText
+      android:id="@+id/productIdToUpdate"
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Please Enter Product Id To Update"/>
+
+
+  <EditText
+      android:id="@+id/updateProductName"
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Please Enter Product Name"/>
+  <EditText
+      android:id="@+id/updateProductPrice"
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Please Enter Product Price"/>
+  <EditText
+      android:id="@+id/updateProductExpiry"
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Please Enter Product Expiry"/>
+  <Button
+      android:onClick="updateProduct"
+      android:layout_margin="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Update Product"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="click"
+      android:onClick="show"/>
+ </LinearLayout>
+ </ScrollView>
+</LinearLayout>
